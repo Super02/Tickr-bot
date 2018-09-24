@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+    id'com.github.johnrengelman.shadow' version '2.0.4'
+}
+
+group 'me.enscivwy'
+version '1.0-SNAPSHOT'
+mainClassName = "me.enscivwy.ticketbot.TicketBot"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "net.dv8tion:JDA:3.8.0_427"
+}
