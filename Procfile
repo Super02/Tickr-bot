@@ -1,1 +1,1 @@
-worker:  java -jar TickerBot.jar
+worker:  java -jar ticketbot.jar
